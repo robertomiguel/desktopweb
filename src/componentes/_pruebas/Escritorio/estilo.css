@@ -1,0 +1,16 @@
+.pantalla {
+  position: absolute;
+  background: rgb(214, 214, 214);
+  border: solid 2px blue;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+}
+
+.barraPrincipal {
+  border: solid 1px black;
+  background: yellow;
+  position: fixed;
+  top:100px; left: 0;
+  right: 0; height: 2em;
+
+}

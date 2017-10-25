@@ -1,0 +1,14 @@
+.ConfigurarClientes .div2 { width: 50%; }
+.ConfigurarClientes .div3 { width: 40%; }
+.ConfigurarClientes .div4 { width: 10%; }
+
+@media screen and (max-width: 800px) {
+  .ConfigurarClientes .div2 { width: 40%; }
+  .ConfigurarClientes .div3 { width: 60%; }
+  .ConfigurarClientes .div4 { width: 100%; }
+}
+@media screen and (max-width: 500px){
+  .ConfigurarClientes .div2 { width: 100%; }
+  .ConfigurarClientes .div3 { width: 100%; }
+  .ConfigurarClientes .div4 { width: 100%; }
+}

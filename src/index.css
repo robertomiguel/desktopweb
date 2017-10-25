@@ -2,4 +2,34 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow: hidden;
+}
+
+.react-swipeable-view-container {
+  position: fixed;
+  top: 98px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .react-swipeable-view-container {
+    top: 50px;
+  }
+  .barra-ventanas {
+    top: -50px;
+  }
+}
+
+.noSel {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.borrado {
+  text-decoration: line-through;
+  color: red;
 }

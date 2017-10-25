@@ -1,0 +1,14 @@
+.AgregarCliente .div2 { width: 20%; }
+.AgregarCliente .div3 { width: 60%; }
+.AgregarCliente .div4 { width: 20%; }
+
+@media screen and (max-width: 800px) {
+  .AgregarCliente .div2 { width: 40%; }
+  .AgregarCliente .div3 { width: 60%; }
+  .AgregarCliente .div4 { width: 100%; }
+}
+@media screen and (max-width: 500px){
+  .AgregarCliente .div2 { width: 100%; }
+  .AgregarCliente .div3 { width: 100%; }
+  .AgregarCliente .div4 { width: 100%; }
+}

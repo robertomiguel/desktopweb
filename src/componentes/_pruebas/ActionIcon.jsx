@@ -1,0 +1,442 @@
+import React from 'react';
+import Accessibility from 'material-ui/svg-icons/action/accessibility';
+import Accessible from 'material-ui/svg-icons/action/accessible';
+import Accountbalancewallet from 'material-ui/svg-icons/action/account-balance-wallet';
+import Accountbalance from 'material-ui/svg-icons/action/account-balance';
+import Accountbox from 'material-ui/svg-icons/action/account-box';
+import Accountcircle from 'material-ui/svg-icons/action/account-circle';
+import Addshoppingcart from 'material-ui/svg-icons/action/add-shopping-cart';
+import Alarmadd from 'material-ui/svg-icons/action/alarm-add';
+import Alarmoff from 'material-ui/svg-icons/action/alarm-off';
+import Alarmon from 'material-ui/svg-icons/action/alarm-on';
+import Alarm from 'material-ui/svg-icons/action/alarm';
+import Allout from 'material-ui/svg-icons/action/all-out';
+import Android from 'material-ui/svg-icons/action/android';
+import Announcement from 'material-ui/svg-icons/action/announcement';
+import Aspectratio from 'material-ui/svg-icons/action/aspect-ratio';
+import Assessment from 'material-ui/svg-icons/action/assessment';
+import Assignmentind from 'material-ui/svg-icons/action/assignment-ind';
+import Assignmentlate from 'material-ui/svg-icons/action/assignment-late';
+import Assignmentreturn from 'material-ui/svg-icons/action/assignment-return';
+import Assignmentreturned from 'material-ui/svg-icons/action/assignment-returned';
+import Assignmentturnedin from 'material-ui/svg-icons/action/assignment-turned-in';
+import Assignment from 'material-ui/svg-icons/action/assignment';
+import Autorenew from 'material-ui/svg-icons/action/autorenew';
+import Backup from 'material-ui/svg-icons/action/backup';
+import Book from 'material-ui/svg-icons/action/book';
+import Bookmarkborder from 'material-ui/svg-icons/action/bookmark-border';
+import Bookmark from 'material-ui/svg-icons/action/bookmark';
+import Bugreport from 'material-ui/svg-icons/action/bug-report';
+import Build from 'material-ui/svg-icons/action/build';
+import Cached from 'material-ui/svg-icons/action/cached';
+import Cameraenhance from 'material-ui/svg-icons/action/camera-enhance';
+import Cardgiftcard from 'material-ui/svg-icons/action/card-giftcard';
+import Cardmembership from 'material-ui/svg-icons/action/card-membership';
+import Cardtravel from 'material-ui/svg-icons/action/card-travel';
+import Changehistory from 'material-ui/svg-icons/action/change-history';
+import Checkcircle from 'material-ui/svg-icons/action/check-circle';
+import Chromereadermode from 'material-ui/svg-icons/action/chrome-reader-mode';
+import Class from 'material-ui/svg-icons/action/class';
+import Code from 'material-ui/svg-icons/action/code';
+import Comparearrows from 'material-ui/svg-icons/action/compare-arrows';
+import Copyright from 'material-ui/svg-icons/action/copyright';
+import Creditcard from 'material-ui/svg-icons/action/credit-card';
+import Dashboard from 'material-ui/svg-icons/action/dashboard';
+import Daterange from 'material-ui/svg-icons/action/date-range';
+import Deleteforever from 'material-ui/svg-icons/action/delete-forever';
+import Delete from 'material-ui/svg-icons/action/delete';
+import Description from 'material-ui/svg-icons/action/description';
+import Dns from 'material-ui/svg-icons/action/dns';
+import Doneall from 'material-ui/svg-icons/action/done-all';
+import Done from 'material-ui/svg-icons/action/done';
+import Donutlarge from 'material-ui/svg-icons/action/donut-large';
+import Donutsmall from 'material-ui/svg-icons/action/donut-small';
+import Eject from 'material-ui/svg-icons/action/eject';
+import Eurosymbol from 'material-ui/svg-icons/action/euro-symbol';
+import Eventseat from 'material-ui/svg-icons/action/event-seat';
+import Event from 'material-ui/svg-icons/action/event';
+import Exittoapp from 'material-ui/svg-icons/action/exit-to-app';
+import Explore from 'material-ui/svg-icons/action/explore';
+import Extension from 'material-ui/svg-icons/action/extension';
+import Face from 'material-ui/svg-icons/action/face';
+import Favoriteborder from 'material-ui/svg-icons/action/favorite-border';
+import Favorite from 'material-ui/svg-icons/action/favorite';
+import Feedback from 'material-ui/svg-icons/action/feedback';
+import Findinpage from 'material-ui/svg-icons/action/find-in-page';
+import Findreplace from 'material-ui/svg-icons/action/find-replace';
+import Fingerprint from 'material-ui/svg-icons/action/fingerprint';
+import Flightland from 'material-ui/svg-icons/action/flight-land';
+import Flighttakeoff from 'material-ui/svg-icons/action/flight-takeoff';
+import Fliptoback from 'material-ui/svg-icons/action/flip-to-back';
+import Fliptofront from 'material-ui/svg-icons/action/flip-to-front';
+import Gtranslate from 'material-ui/svg-icons/action/g-translate';
+import Gavel from 'material-ui/svg-icons/action/gavel';
+import Getapp from 'material-ui/svg-icons/action/get-app';
+import Gif from 'material-ui/svg-icons/action/gif';
+import Grade from 'material-ui/svg-icons/action/grade';
+import Groupwork from 'material-ui/svg-icons/action/group-work';
+import Helpoutline from 'material-ui/svg-icons/action/help-outline';
+import Help from 'material-ui/svg-icons/action/help';
+import Highlightoff from 'material-ui/svg-icons/action/highlight-off';
+import History from 'material-ui/svg-icons/action/history';
+import Home from 'material-ui/svg-icons/action/home';
+import Hourglassempty from 'material-ui/svg-icons/action/hourglass-empty';
+import Hourglassfull from 'material-ui/svg-icons/action/hourglass-full';
+import Http from 'material-ui/svg-icons/action/http';
+import Https from 'material-ui/svg-icons/action/https';
+import Importantdevices from 'material-ui/svg-icons/action/important-devices';
+import Infooutline from 'material-ui/svg-icons/action/info-outline';
+import Info from 'material-ui/svg-icons/action/info';
+import Input from 'material-ui/svg-icons/action/input';
+import Invertcolors from 'material-ui/svg-icons/action/invert-colors';
+import Labeloutline from 'material-ui/svg-icons/action/label-outline';
+import Label from 'material-ui/svg-icons/action/label';
+import Language from 'material-ui/svg-icons/action/language';
+import Launch from 'material-ui/svg-icons/action/launch';
+import Lightbulboutline from 'material-ui/svg-icons/action/lightbulb-outline';
+import Linestyle from 'material-ui/svg-icons/action/line-style';
+import Lineweight from 'material-ui/svg-icons/action/line-weight';
+import List from 'material-ui/svg-icons/action/list';
+import Lockopen from 'material-ui/svg-icons/action/lock-open';
+import Lockoutline from 'material-ui/svg-icons/action/lock-outline';
+import Lock from 'material-ui/svg-icons/action/lock';
+import Loyalty from 'material-ui/svg-icons/action/loyalty';
+import Markunreadmailbox from 'material-ui/svg-icons/action/markunread-mailbox';
+import Motorcycle from 'material-ui/svg-icons/action/motorcycle';
+import Noteadd from 'material-ui/svg-icons/action/note-add';
+import Offlinepin from 'material-ui/svg-icons/action/offline-pin';
+import Opacity from 'material-ui/svg-icons/action/opacity';
+import Openinbrowser from 'material-ui/svg-icons/action/open-in-browser';
+import Openinnew from 'material-ui/svg-icons/action/open-in-new';
+import Openwith from 'material-ui/svg-icons/action/open-with';
+import Pageview from 'material-ui/svg-icons/action/pageview';
+import Pantool from 'material-ui/svg-icons/action/pan-tool';
+import Payment from 'material-ui/svg-icons/action/payment';
+import Permcameramic from 'material-ui/svg-icons/action/perm-camera-mic';
+import Permcontactcalendar from 'material-ui/svg-icons/action/perm-contact-calendar';
+import Permdatasetting from 'material-ui/svg-icons/action/perm-data-setting';
+import Permdeviceinformation from 'material-ui/svg-icons/action/perm-device-information';
+import Permidentity from 'material-ui/svg-icons/action/perm-identity';
+import Permmedia from 'material-ui/svg-icons/action/perm-media';
+import Permphonemsg from 'material-ui/svg-icons/action/perm-phone-msg';
+import Permscanwifi from 'material-ui/svg-icons/action/perm-scan-wifi';
+import Pets from 'material-ui/svg-icons/action/pets';
+import Pictureinpicturealt from 'material-ui/svg-icons/action/picture-in-picture-alt';
+import Pictureinpicture from 'material-ui/svg-icons/action/picture-in-picture';
+import Playforwork from 'material-ui/svg-icons/action/play-for-work';
+import Polymer from 'material-ui/svg-icons/action/polymer';
+import Powersettingsnew from 'material-ui/svg-icons/action/power-settings-new';
+import Pregnantwoman from 'material-ui/svg-icons/action/pregnant-woman';
+import Print from 'material-ui/svg-icons/action/print';
+import Querybuilder from 'material-ui/svg-icons/action/query-builder';
+import Questionanswer from 'material-ui/svg-icons/action/question-answer';
+import Receipt from 'material-ui/svg-icons/action/receipt';
+import Recordvoiceover from 'material-ui/svg-icons/action/record-voice-over';
+import Redeem from 'material-ui/svg-icons/action/redeem';
+import Removeshoppingcart from 'material-ui/svg-icons/action/remove-shopping-cart';
+import Reorder from 'material-ui/svg-icons/action/reorder';
+import Reportproblem from 'material-ui/svg-icons/action/report-problem';
+import Restorepage from 'material-ui/svg-icons/action/restore-page';
+import Restore from 'material-ui/svg-icons/action/restore';
+import Room from 'material-ui/svg-icons/action/room';
+import Roundedcorner from 'material-ui/svg-icons/action/rounded-corner';
+import Rowing from 'material-ui/svg-icons/action/rowing';
+import Schedule from 'material-ui/svg-icons/action/schedule';
+import Search from 'material-ui/svg-icons/action/search';
+import Settingsapplications from 'material-ui/svg-icons/action/settings-applications';
+import Settingsbackuprestore from 'material-ui/svg-icons/action/settings-backup-restore';
+import Settingsbluetooth from 'material-ui/svg-icons/action/settings-bluetooth';
+import Settingsbrightness from 'material-ui/svg-icons/action/settings-brightness';
+import Settingscell from 'material-ui/svg-icons/action/settings-cell';
+import Settingsethernet from 'material-ui/svg-icons/action/settings-ethernet';
+import Settingsinputantenna from 'material-ui/svg-icons/action/settings-input-antenna';
+import Settingsinputcomponent from 'material-ui/svg-icons/action/settings-input-component';
+import Settingsinputcomposite from 'material-ui/svg-icons/action/settings-input-composite';
+import Settingsinputhdmi from 'material-ui/svg-icons/action/settings-input-hdmi';
+import Settingsinputsvideo from 'material-ui/svg-icons/action/settings-input-svideo';
+import Settingsoverscan from 'material-ui/svg-icons/action/settings-overscan';
+import Settingsphone from 'material-ui/svg-icons/action/settings-phone';
+import Settingspower from 'material-ui/svg-icons/action/settings-power';
+import Settingsremote from 'material-ui/svg-icons/action/settings-remote';
+import Settingsvoice from 'material-ui/svg-icons/action/settings-voice';
+import Settings from 'material-ui/svg-icons/action/settings';
+import Shoptwo from 'material-ui/svg-icons/action/shop-two';
+import Shop from 'material-ui/svg-icons/action/shop';
+import Shoppingbasket from 'material-ui/svg-icons/action/shopping-basket';
+import Shoppingcart from 'material-ui/svg-icons/action/shopping-cart';
+import Speakernotesoff from 'material-ui/svg-icons/action/speaker-notes-off';
+import Speakernotes from 'material-ui/svg-icons/action/speaker-notes';
+import Spellcheck from 'material-ui/svg-icons/action/spellcheck';
+import Stars from 'material-ui/svg-icons/action/stars';
+import Store from 'material-ui/svg-icons/action/store';
+import Subject from 'material-ui/svg-icons/action/subject';
+import Supervisoraccount from 'material-ui/svg-icons/action/supervisor-account';
+import Swaphoriz from 'material-ui/svg-icons/action/swap-horiz';
+import Swapvert from 'material-ui/svg-icons/action/swap-vert';
+import Swapverticalcircle from 'material-ui/svg-icons/action/swap-vertical-circle';
+import Systemupdatealt from 'material-ui/svg-icons/action/system-update-alt';
+import Tabunselected from 'material-ui/svg-icons/action/tab-unselected';
+import Tab from 'material-ui/svg-icons/action/tab';
+import Theaters from 'material-ui/svg-icons/action/theaters';
+import Threedrotation from 'material-ui/svg-icons/action/three-d-rotation';
+import Thumbdown from 'material-ui/svg-icons/action/thumb-down';
+import Thumbup from 'material-ui/svg-icons/action/thumb-up';
+import Thumbsupdown from 'material-ui/svg-icons/action/thumbs-up-down';
+import Timeline from 'material-ui/svg-icons/action/timeline';
+import Toc from 'material-ui/svg-icons/action/toc';
+import Today from 'material-ui/svg-icons/action/today';
+import Toll from 'material-ui/svg-icons/action/toll';
+import Touchapp from 'material-ui/svg-icons/action/touch-app';
+import Trackchanges from 'material-ui/svg-icons/action/track-changes';
+import Translate from 'material-ui/svg-icons/action/translate';
+import Trendingdown from 'material-ui/svg-icons/action/trending-down';
+import Trendingflat from 'material-ui/svg-icons/action/trending-flat';
+import Trendingup from 'material-ui/svg-icons/action/trending-up';
+import Turnedinnot from 'material-ui/svg-icons/action/turned-in-not';
+import Turnedin from 'material-ui/svg-icons/action/turned-in';
+import Update from 'material-ui/svg-icons/action/update';
+import Verifieduser from 'material-ui/svg-icons/action/verified-user';
+import Viewagenda from 'material-ui/svg-icons/action/view-agenda';
+import Viewarray from 'material-ui/svg-icons/action/view-array';
+import Viewcarousel from 'material-ui/svg-icons/action/view-carousel';
+import Viewcolumn from 'material-ui/svg-icons/action/view-column';
+import Viewday from 'material-ui/svg-icons/action/view-day';
+import Viewheadline from 'material-ui/svg-icons/action/view-headline';
+import Viewlist from 'material-ui/svg-icons/action/view-list';
+import Viewmodule from 'material-ui/svg-icons/action/view-module';
+import Viewquilt from 'material-ui/svg-icons/action/view-quilt';
+import Viewstream from 'material-ui/svg-icons/action/view-stream';
+import Viewweek from 'material-ui/svg-icons/action/view-week';
+import Visibilityoff from 'material-ui/svg-icons/action/visibility-off';
+import Visibility from 'material-ui/svg-icons/action/visibility';
+import Watchlater from 'material-ui/svg-icons/action/watch-later';
+import Work from 'material-ui/svg-icons/action/work';
+import Youtubesearchedfor from 'material-ui/svg-icons/action/youtube-searched-for';
+import Zoomin from 'material-ui/svg-icons/action/zoom-in';
+import Zoomout from 'material-ui/svg-icons/action/zoom-out';
+
+import './iconos.css';
+
+export default class ActionIcon extends React.Component {
+  render() {
+   return (
+     <div className='SVG-iconos'>
+       <div><Accessibility /><br /> accessibility</div>
+       <div><Accessible /><br /> accessible</div>
+       <div><Accountbalancewallet /><br /> account-balance-wallet</div>
+       <div><Accountbalance /><br /> account-balance</div>
+       <div><Accountbox /><br /> account-box</div>
+       <div><Accountcircle /><br /> account-circle</div>
+       <div><Addshoppingcart /><br /> add-shopping-cart</div>
+       <div><Alarmadd /><br /> alarm-add</div>
+       <div><Alarmoff /><br /> alarm-off</div>
+       <div><Alarmon /><br /> alarm-on</div>
+       <div><Alarm /><br /> alarm</div>
+       <div><Allout /><br /> all-out</div>
+       <div><Android /><br /> android</div>
+       <div><Announcement /><br /> announcement</div>
+       <div><Aspectratio /><br /> aspect-ratio</div>
+       <div><Assessment /><br /> assessment</div>
+       <div><Assignmentind /><br /> assignment-ind</div>
+       <div><Assignmentlate /><br /> assignment-late</div>
+       <div><Assignmentreturn /><br /> assignment-return</div>
+       <div><Assignmentreturned /><br /> assignment-returned</div>
+       <div><Assignmentturnedin /><br /> assignment-turned-in</div>
+       <div><Assignment /><br /> assignment</div>
+       <div><Autorenew /><br /> autorenew</div>
+       <div><Backup /><br /> backup</div>
+       <div><Book /><br /> book</div>
+       <div><Bookmarkborder /><br /> bookmark-border</div>
+       <div><Bookmark /><br /> bookmark</div>
+       <div><Bugreport /><br /> bug-report</div>
+       <div><Build /><br /> build</div>
+       <div><Cached /><br /> cached</div>
+       <div><Cameraenhance /><br /> camera-enhance</div>
+       <div><Cardgiftcard /><br /> card-giftcard</div>
+       <div><Cardmembership /><br /> card-membership</div>
+       <div><Cardtravel /><br /> card-travel</div>
+       <div><Changehistory /><br /> change-history</div>
+       <div><Checkcircle /><br /> check-circle</div>
+       <div><Chromereadermode /><br /> chrome-reader-mode</div>
+       <div><Class /><br /> class</div>
+       <div><Code /><br /> code</div>
+       <div><Comparearrows /><br /> compare-arrows</div>
+       <div><Copyright /><br /> copyright</div>
+       <div><Creditcard /><br /> credit-card</div>
+       <div><Dashboard /><br /> dashboard</div>
+       <div><Daterange /><br /> date-range</div>
+       <div><Deleteforever /><br /> delete-forever</div>
+       <div><Delete /><br /> delete</div>
+       <div><Description /><br /> description</div>
+       <div><Dns /><br /> dns</div>
+       <div><Doneall /><br /> done-all</div>
+       <div><Done /><br /> done</div>
+       <div><Donutlarge /><br /> donut-large</div>
+       <div><Donutsmall /><br /> donut-small</div>
+       <div><Eject /><br /> eject</div>
+       <div><Eurosymbol /><br /> euro-symbol</div>
+       <div><Eventseat /><br /> event-seat</div>
+       <div><Event /><br /> event</div>
+       <div><Exittoapp /><br /> exit-to-app</div>
+       <div><Explore /><br /> explore</div>
+       <div><Extension /><br /> extension</div>
+       <div><Face /><br /> face</div>
+       <div><Favoriteborder /><br /> favorite-border</div>
+       <div><Favorite /><br /> favorite</div>
+       <div><Feedback /><br /> feedback</div>
+       <div><Findinpage /><br /> find-in-page</div>
+       <div><Findreplace /><br /> find-replace</div>
+       <div><Fingerprint /><br /> fingerprint</div>
+       <div><Flightland /><br /> flight-land</div>
+       <div><Flighttakeoff /><br /> flight-takeoff</div>
+       <div><Fliptoback /><br /> flip-to-back</div>
+       <div><Fliptofront /><br /> flip-to-front</div>
+       <div><Gtranslate /><br /> g-translate</div>
+       <div><Gavel /><br /> gavel</div>
+       <div><Getapp /><br /> get-app</div>
+       <div><Gif /><br /> gif</div>
+       <div><Grade /><br /> grade</div>
+       <div><Groupwork /><br /> group-work</div>
+       <div><Helpoutline /><br /> help-outline</div>
+       <div><Help /><br /> help</div>
+       <div><Highlightoff /><br /> highlight-off</div>
+       <div><History /><br /> history</div>
+       <div><Home /><br /> home</div>
+       <div><Hourglassempty /><br /> hourglass-empty</div>
+       <div><Hourglassfull /><br /> hourglass-full</div>
+       <div><Http /><br /> http</div>
+       <div><Https /><br /> https</div>
+       <div><Importantdevices /><br /> important-devices</div>
+       <div><Infooutline /><br /> info-outline</div>
+       <div><Info /><br /> info</div>
+       <div><Input /><br /> input</div>
+       <div><Invertcolors /><br /> invert-colors</div>
+       <div><Labeloutline /><br /> label-outline</div>
+       <div><Label /><br /> label</div>
+       <div><Language /><br /> language</div>
+       <div><Launch /><br /> launch</div>
+       <div><Lightbulboutline /><br /> lightbulb-outline</div>
+       <div><Linestyle /><br /> line-style</div>
+       <div><Lineweight /><br /> line-weight</div>
+       <div><List /><br /> list</div>
+       <div><Lockopen /><br /> lock-open</div>
+       <div><Lockoutline /><br /> lock-outline</div>
+       <div><Lock /><br /> lock</div>
+       <div><Loyalty /><br /> loyalty</div>
+       <div><Markunreadmailbox /><br /> markunread-mailbox</div>
+       <div><Motorcycle /><br /> motorcycle</div>
+       <div><Noteadd /><br /> note-add</div>
+       <div><Offlinepin /><br /> offline-pin</div>
+       <div><Opacity /><br /> opacity</div>
+       <div><Openinbrowser /><br /> open-in-browser</div>
+       <div><Openinnew /><br /> open-in-new</div>
+       <div><Openwith /><br /> open-with</div>
+       <div><Pageview /><br /> pageview</div>
+       <div><Pantool /><br /> pan-tool</div>
+       <div><Payment /><br /> payment</div>
+       <div><Permcameramic /><br /> perm-camera-mic</div>
+       <div><Permcontactcalendar /><br /> perm-contact-calendar</div>
+       <div><Permdatasetting /><br /> perm-data-setting</div>
+       <div><Permdeviceinformation /><br /> perm-device-information</div>
+       <div><Permidentity /><br /> perm-identity</div>
+       <div><Permmedia /><br /> perm-media</div>
+       <div><Permphonemsg /><br /> perm-phone-msg</div>
+       <div><Permscanwifi /><br /> perm-scan-wifi</div>
+       <div><Pets /><br /> pets</div>
+       <div><Pictureinpicturealt /><br /> picture-in-picture-alt</div>
+       <div><Pictureinpicture /><br /> picture-in-picture</div>
+       <div><Playforwork /><br /> play-for-work</div>
+       <div><Polymer /><br /> polymer</div>
+       <div><Powersettingsnew /><br /> power-settings-new</div>
+       <div><Pregnantwoman /><br /> pregnant-woman</div>
+       <div><Print /><br /> print</div>
+       <div><Querybuilder /><br /> query-builder</div>
+       <div><Questionanswer /><br /> question-answer</div>
+       <div><Receipt /><br /> receipt</div>
+       <div><Recordvoiceover /><br /> record-voice-over</div>
+       <div><Redeem /><br /> redeem</div>
+       <div><Removeshoppingcart /><br /> remove-shopping-cart</div>
+       <div><Reorder /><br /> reorder</div>
+       <div><Reportproblem /><br /> report-problem</div>
+       <div><Restorepage /><br /> restore-page</div>
+       <div><Restore /><br /> restore</div>
+       <div><Room /><br /> room</div>
+       <div><Roundedcorner /><br /> rounded-corner</div>
+       <div><Rowing /><br /> rowing</div>
+       <div><Schedule /><br /> schedule</div>
+       <div><Search /><br /> search</div>
+       <div><Settingsapplications /><br /> settings-applications</div>
+       <div><Settingsbackuprestore /><br /> settings-backup-restore</div>
+       <div><Settingsbluetooth /><br /> settings-bluetooth</div>
+       <div><Settingsbrightness /><br /> settings-brightness</div>
+       <div><Settingscell /><br /> settings-cell</div>
+       <div><Settingsethernet /><br /> settings-ethernet</div>
+       <div><Settingsinputantenna /><br /> settings-input-antenna</div>
+       <div><Settingsinputcomponent /><br /> settings-input-component</div>
+       <div><Settingsinputcomposite /><br /> settings-input-composite</div>
+       <div><Settingsinputhdmi /><br /> settings-input-hdmi</div>
+       <div><Settingsinputsvideo /><br /> settings-input-svideo</div>
+       <div><Settingsoverscan /><br /> settings-overscan</div>
+       <div><Settingsphone /><br /> settings-phone</div>
+       <div><Settingspower /><br /> settings-power</div>
+       <div><Settingsremote /><br /> settings-remote</div>
+       <div><Settingsvoice /><br /> settings-voice</div>
+       <div><Settings /><br /> settings</div>
+       <div><Shoptwo /><br /> shop-two</div>
+       <div><Shop /><br /> shop</div>
+       <div><Shoppingbasket /><br /> shopping-basket</div>
+       <div><Shoppingcart /><br /> shopping-cart</div>
+       <div><Speakernotesoff /><br /> speaker-notes-off</div>
+       <div><Speakernotes /><br /> speaker-notes</div>
+       <div><Spellcheck /><br /> spellcheck</div>
+       <div><Stars /><br /> stars</div>
+       <div><Store /><br /> store</div>
+       <div><Subject /><br /> subject</div>
+       <div><Supervisoraccount /><br /> supervisor-account</div>
+       <div><Swaphoriz /><br /> swap-horiz</div>
+       <div><Swapvert /><br /> swap-vert</div>
+       <div><Swapverticalcircle /><br /> swap-vertical-circle</div>
+       <div><Systemupdatealt /><br /> system-update-alt</div>
+       <div><Tabunselected /><br /> tab-unselected</div>
+       <div><Tab /><br /> tab</div>
+       <div><Theaters /><br /> theaters</div>
+       <div><Threedrotation /><br /> three-d-rotation</div>
+       <div><Thumbdown /><br /> thumb-down</div>
+       <div><Thumbup /><br /> thumb-up</div>
+       <div><Thumbsupdown /><br /> thumbs-up-down</div>
+       <div><Timeline /><br /> timeline</div>
+       <div><Toc /><br /> toc</div>
+       <div><Today /><br /> today</div>
+       <div><Toll /><br /> toll</div>
+       <div><Touchapp /><br /> touch-app</div>
+       <div><Trackchanges /><br /> track-changes</div>
+       <div><Translate /><br /> translate</div>
+       <div><Trendingdown /><br /> trending-down</div>
+       <div><Trendingflat /><br /> trending-flat</div>
+       <div><Trendingup /><br /> trending-up</div>
+       <div><Turnedinnot /><br /> turned-in-not</div>
+       <div><Turnedin /><br /> turned-in</div>
+       <div><Update /><br /> update</div>
+       <div><Verifieduser /><br /> verified-user</div>
+       <div><Viewagenda /><br /> view-agenda</div>
+       <div><Viewarray /><br /> view-array</div>
+       <div><Viewcarousel /><br /> view-carousel</div>
+       <div><Viewcolumn /><br /> view-column</div>
+       <div><Viewday /><br /> view-day</div>
+       <div><Viewheadline /><br /> view-headline</div>
+       <div><Viewlist /><br /> view-list</div>
+       <div><Viewmodule /><br /> view-module</div>
+       <div><Viewquilt /><br /> view-quilt</div>
+       <div><Viewstream /><br /> view-stream</div>
+       <div><Viewweek /><br /> view-week</div>
+       <div><Visibilityoff /><br /> visibility-off</div>
+       <div><Visibility /><br /> visibility</div>
+       <div><Watchlater /><br /> watch-later</div>
+       <div><Work /><br /> work</div>
+       <div><Youtubesearchedfor /><br /> youtube-searched-for</div>
+       <div><Zoomin /><br /> zoom-in</div>
+       <div><Zoomout /><br /> zoom-out</div>
+     </div>
+    )
+  }
+}

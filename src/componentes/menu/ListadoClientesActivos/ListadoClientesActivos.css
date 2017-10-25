@@ -1,0 +1,14 @@
+.ListadoClientesActivos-div2 { width: 20%; }
+.ListadoClientesActivos-div3 { width: 60%; }
+.ListadoClientesActivos-div4 { width: 20%; }
+
+@media screen and (max-width: 800px) {
+  .ListadoClientesActivos-div2 { width: 40%; }
+  .ListadoClientesActivos-div3 { width: 60%; }
+  .ListadoClientesActivos-div4 { width: 100%; }
+}
+@media screen and (max-width: 500px){
+  .ListadoClientesActivos-div2 { width: 100%; }
+  .ListadoClientesActivos-div3 { width: 100%; }
+  .ListadoClientesActivos-div4 { width: 100%; }
+}

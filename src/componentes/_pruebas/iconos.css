@@ -1,0 +1,19 @@
+.SVG-iconos {
+  width: 100%;
+  background: cyan;
+  text-align: center;
+}
+.SVG-iconos svg {
+  position: relative;
+  width: 60px !important;
+  height: 60px !important;
+  left: 28%; top: 10px;
+  padding: 0;
+}
+
+.SVG-iconos div {
+  display: inline-grid;
+  border: solid 1px black;
+  width: 160px;
+  height: 120px;
+}
