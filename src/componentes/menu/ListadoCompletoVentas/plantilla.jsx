@@ -6,7 +6,7 @@ export const plantilla = {
     float:'left',
     padding: '2%',
     textAlign: 'center',
-    // height: '400px',
+    height: '400px',
     border: 'solid 1px',
   },
   titulo: {

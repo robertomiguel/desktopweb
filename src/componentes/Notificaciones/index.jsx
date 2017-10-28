@@ -4,8 +4,8 @@ import NotaNotif from '../globales/NotaNotif'
 //import acciones from '../../acciones'
 
 class Notificaciones extends Component {
-  cerrar = (id) => {
-    this.props.cerrar(id)
+  cerrar = (fecha) => {
+    this.props.cerrar(fecha)
     this.forceUpdate()
   }
   render() {
@@ -13,10 +13,9 @@ class Notificaciones extends Component {
       <div>
         {this.props.nota.map((m,i)=>
           <NotaNotif
-            titulo={m.titulo}
-            texto={m.texto}
+              {...m}
+
             key={`noti-id-${i}`}
-            notaID={i}
             cerrar={this.cerrar}
       />
         )}

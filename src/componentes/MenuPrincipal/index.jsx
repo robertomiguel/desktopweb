@@ -3,8 +3,11 @@ import { connect } from 'react-redux'
 import Api from './Api'
 import Contenedor from './Contenedor'
 import Accion from './Accion'
+import FiltroBuscar from './FiltroBuscar'
 
 import './estilo.css'
+import acciones from "../../acciones"
+
 
 class MenuPrincipal extends Component {
   constructor(props) {
@@ -17,13 +20,12 @@ class MenuPrincipal extends Component {
 
   async componentDidMount() {
     let datos = await Api.menu;
-    this.props.dispatch({
-      type: 'CARGAR_MENU',
-      menuPrincipal: datos
-    });
+    this.props.dispatch(
+        acciones.cargarMenu(datos)
+    );
     this.setState({
       cargando: false,
-    });
+    })
     console.log(`Items Menú Cargados: ${this.props.menuPrincipal.length}`)
   }
 
@@ -53,6 +55,11 @@ class MenuPrincipal extends Component {
 
     return (
       <div className="menu_principal">
+        <FiltroBuscar   datos={this.props.menuPrincipal}
+                        accion={this.props.accion}
+                        estado={this.props.estado}
+                        autoFocus={true}
+                        />
         {this.state.cargando && <div>cargando...</div>}
         {raiz.map( m =>
             <span key={m.id}>

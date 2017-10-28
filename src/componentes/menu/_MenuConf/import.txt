@@ -7,15 +7,3 @@ import ListadoClientesActivos from './ListadoClientesActivos'
 import ListadoCompletoVentas from './ListadoCompletoVentas'
 import ListadoCompletoClientes from './ListadoCompletoClientes'
 import ListadoPanaderosJq from './ListadoPanaderosJq'
-
-export {
-AgregarCliente,
-EliminarCliente,
-ModificarCliente,
-EditarMenuPrincipal,
-ConfigurarClientes,
-ListadoClientesActivos,
-ListadoCompletoVentas,
-ListadoCompletoClientes,
-ListadoPanaderosJq,
-}

@@ -1,32 +1,31 @@
 const estadoInicial = {
-  menuPrincipal: [],
-  nota: [],
+    menuPrincipal: [],
+    nota: [],
 }
 
-function reducer (estado = estadoInicial, accion = {}) {
-  switch (accion.type) {
+function reducer(estado = estadoInicial, accion = {}) {
+    switch (accion.type) {
 
-    case 'CARGAR_MENU':
-      return Object.assign({}, estado, {menuPrincipal: accion.menuPrincipal})
+        case 'CARGAR_MENU':
+            return Object.assign({}, estado, {menuPrincipal: accion.menuPrincipal})
 
-      case 'LEER_NOTAS':
-        let d = new Date()
-        accion.nota.fecha = d.getTime()
-        return Object.assign({}, estado,{
-          nota: estado.nota.concat(accion.nota)
-                .sort((a,b) => {
-                  return a.fecha<b.fecha
-                })
-        })
+        case 'NUEVA_NOTA':
+            let d = new Date()
+            accion.nota.fecha = d.getTime()
+            return Object.assign({}, estado, {
+                nota: estado.nota.concat(Object.assign({},accion.nota))
+                    .sort((a,b) => a.fecha<b.fecha )
+            })
 
-      case 'BORRAR_NOTAS':
-        return Object.assign({}, estado, {
-          nota: accion.nota
-        })
+        case 'BORRAR_NOTA':
+            return Object.assign({}, estado, {
+                nota: estado.nota.filter(f=>f.fecha!==accion.fecha)
 
-    default:
-      return estado;
-  }
+            })
+
+        default:
+            return estado;
+    }
 }
 
 export default reducer

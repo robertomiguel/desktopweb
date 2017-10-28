@@ -18,7 +18,7 @@ class Contenido extends Component {
   }
   enviar = () => {
     this.props.dispatch(
-      acciones.leerNotas(this.state.nota)
+      acciones.nuevaNota(this.state.nota)
     )
   }
   editarTexto = (a) => {

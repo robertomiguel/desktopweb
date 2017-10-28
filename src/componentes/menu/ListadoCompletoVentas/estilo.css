@@ -1,0 +1,14 @@
+.ListadoCompletoVentas .div2 { width: 20%; }
+.ListadoCompletoVentas .div3 { width: 60%; }
+.ListadoCompletoVentas .div4 { width: 20%; }
+
+@media screen and (max-width: 800px) {
+  .ListadoCompletoVentas .div2 { width: 40%; }
+  .ListadoCompletoVentas .div3 { width: 60%; }
+  .ListadoCompletoVentas .div4 { width: 100%; }
+}
+@media screen and (max-width: 500px){
+  .ListadoCompletoVentas .div2 { width: 100%; }
+  .ListadoCompletoVentas .div3 { width: 100%; }
+  .ListadoCompletoVentas .div4 { width: 100%; }
+}

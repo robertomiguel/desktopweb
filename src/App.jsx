@@ -20,13 +20,10 @@ class App extends Component {
 
     abrirVentana = (datos) => {
         this.props.dispatch(
-            {
-                type: 'LEER_NOTAS',
-                nota: {
-                    titulo: datos.contenido,
-                    texto: datos.titulo
-                },
-            }
+            acciones.nuevaNota({
+                titulo: datos.contenido,
+                texto:  datos.titulo,
+                })
         );
         let index = -1
         this.state.ventanas.forEach((m, i) => {
@@ -61,23 +58,22 @@ class App extends Component {
     abrirCerrarMenu = () => {
         this.setState({open: !this.props.estadoMenu})
     }
+
     estado = () => {
         this.setState({open: false})
     }
+
     abrirCerrarNotif = () => {
         this.setState({openNotif: !this.props.openNotif})
     }
-    cerrarNotaNotif = (id) => {
-        let notas = this.props.nota
-        notas.splice(id, 1)
+
+    cerrarNotaNotif = (fecha) => {
+        //let nota = this.props.nota
+        //nota.splice(id, 1)
         this.props.dispatch(
-            acciones.borrarNotas(notas)
+            acciones.borrarNota(fecha)
         )
     }
-
-    // respuestaFacebook = (response) => {
-    //     console.log(response);
-    // }
 
     render() {
 
@@ -95,15 +91,18 @@ class App extends Component {
                         activarVentana={this.activarVentana}
                         notificaciones={this.props.nota.length}
                     />
-
+                    {/* Menu Principal */}
                     <Drawer
                         docked={false}
                         width={350}
                         open={this.state.open}
                         onRequestChange={(open) => this.setState({open})}
+                        containerStyle={{background: 'rgba(0, 188, 212, 0.7)'}}
                     >
                         <MenuPrincipal accion={this.abrirVentana} estado={this.estado}/>
                     </Drawer>
+
+                    {/* Panel Notificaciones */}
                     <Drawer
                         docked={false}
                         width={300}
@@ -112,9 +111,7 @@ class App extends Component {
                         openSecondary={true}
                         containerStyle={{background: 'rgba(0, 188, 212, 0.7)'}}
                     >
-
                         <Notificaciones cerrar={this.cerrarNotaNotif}/>
-
                     </Drawer>
 
                 </section>

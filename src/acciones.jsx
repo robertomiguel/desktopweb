@@ -1,24 +1,27 @@
-// function leerMenu(item) {
-//   return {
-//     type: 'LEER_MENU',
-//     item: item
-//   }
-// }
 
-function leerNotas(item) {
+function cargarMenu(datos) {
   return {
-    type: 'LEER_NOTAS',
+    type: 'CARGAR_MENU',
+    menuPrincipal: datos
+  }
+
+}
+
+function nuevaNota(item) {
+  return {
+    type: 'NUEVA_NOTA',
     nota: item
   }
 }
 
-function borrarNotas(item) {
+function borrarNota(item) {
   return {
-    type: 'BORRAR_NOTAS',
-    nota: item
+    type: 'BORRAR_NOTA',
+    fecha: item
   }
 }
+
 
 export default {
-  leerNotas, borrarNotas
+  nuevaNota, borrarNota, cargarMenu
 }
