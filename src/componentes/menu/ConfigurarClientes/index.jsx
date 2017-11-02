@@ -20,6 +20,9 @@ class Contenido extends Component {
     this.props.dispatch(
       acciones.nuevaNota(this.state.nota)
     )
+    // this.props.dispatch(
+    //   acciones.enviarNota(this.state.nota)
+    // )
   }
   editarTexto = (a) => {
     let nota = Object.assign({},this.state.nota)

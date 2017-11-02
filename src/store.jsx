@@ -2,6 +2,8 @@ import { createStore, applyMiddleware } from 'redux'
 import reducer from './reducer'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
+import io from 'socket.io-client';
+import socketIO from 'socket.io-redux';
 
 // Middleware
 const info = store => next => (accion) => {
@@ -22,9 +24,12 @@ const info = store => next => (accion) => {
 
 }
 
-
 const store = createStore(reducer, composeWithDevTools(
-    applyMiddleware(info),
+    applyMiddleware(
+        info,
+        // socketIO(io.connect(process.env.SOCKET_URL))
+        socketIO(io.connect('http://localhost:3001'))
+        ),
 
 ));
 

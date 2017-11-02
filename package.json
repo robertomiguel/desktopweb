@@ -21,7 +21,8 @@
     "redux": "^3.7.2",
     "redux-duck": "^1.0.2",
     "socket.io": "^2.0.4",
-    "socket.io-client": "^2.0.4"
+    "socket.io-client": "^2.0.4",
+    "socket.io-redux": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
